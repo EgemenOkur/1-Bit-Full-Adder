@@ -1,0 +1,31 @@
+Test Bench Code
+`timescale 1ns / 1ps
+module FA1bittestbench;
+ // Inputs
+ reg a;
+ reg b;
+ reg cin;
+ // Outputs
+ wire s;
+ wire cout;
+ // Instantiate the Unit Under Test (UUT)
+ FA1bit uut (
+ .a(a),
+ .b(b),
+ .cin(cin),
+ .s(s),
+ .cout(cout)
+ );
+ initial begin
+ // Initialize Inputs
+ a = 0;b = 0;cin = 0;
+ #60 a = 0;b = 0;cin = 1;
+ #60 a = 0;b = 1;cin = 0;
+ #60 a = 0;b = 1;cin = 1;
+ #60 a = 1;b = 0;cin = 0;
+ #60 a = 1;b = 0;cin = 1;
+ #60 a = 1;b = 1;cin = 0;
+ #60 a = 1;b = 1;cin = 1;
+ end
+
+Endmodule 
