@@ -1,0 +1,11 @@
+module GateLevel(
+ input a,b,cin,
+ output s,cout
+ );
+wire q,w,e;
+ xor(q,a,b);
+ xor(s,q,cin);
+ and(w,cin,q);
+ and(e,b,a);
+ or(cout,w,e);
+endmodule
