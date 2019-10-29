@@ -9,3 +9,5 @@ inputs are A and B and the third input is an input carry as C-IN. The output car
 designated as C-OUT and the normal output is designated as S which is SUM.
 A full adder logic is designed in such a manner that can take eight inputs together to create
 a byte-wide adder and cascade the carry bit from one adder to the another.
+
+For comparing results and questions please send me a mail to code@egemenokur.com
